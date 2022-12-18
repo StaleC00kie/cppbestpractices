@@ -249,9 +249,9 @@ For POD types, the performance of an initializer list is the same as manual init
 class MyClass
 {
 public:
-  MyClass(int t_value)
+  MyClass(int value)
   {
-    m_value = t_value;
+    m_value = value;
   }
 
 private:
@@ -264,9 +264,9 @@ private:
 class MyClass
 {
 public:
-  MyClass(MyOtherClass t_myOtherClass)
+  MyClass(MyOtherClass myOtherClass)
   {
-    m_myOtherClass = t_myOtherClass;
+    m_myOtherClass = myOtherClass;
   }
 
 private:
@@ -278,8 +278,8 @@ private:
 class MyClass
 {
 public:
-  MyClass(int t_value)
-    : m_value(t_value)
+  MyClass(int value)
+    : m_value(value)
   {
   }
 
@@ -293,8 +293,8 @@ private:
 class MyClass
 {
 public:
-  MyClass(MyOtherClass t_myOtherClass)
-    : m_myOtherClass(t_myOtherClass)
+  MyClass(MyOtherClass myOtherClass)
+    : m_myOtherClass(myOtherClass)
   {
   }
 
